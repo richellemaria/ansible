@@ -10,7 +10,7 @@
     - name: This is local variable demo
       ansible.builtin.debug:
         msg: The value of variable is {{ URL }}
-        msg: The value of car is {{ CARNAME }}
       vars:
         URL: task.google.com
+        msg: The value of car is {{ CARNAME }}
 
