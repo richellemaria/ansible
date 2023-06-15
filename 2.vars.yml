@@ -7,7 +7,6 @@
       ansible.builtin.debug:
        msg: The value of variable is {{ URL }}
 
-  tasks:
     - name: This is local variable demo
       ansible.builtin.debug:
        msg: The value of variable is {{ URL }}
