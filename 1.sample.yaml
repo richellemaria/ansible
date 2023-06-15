@@ -9,3 +9,9 @@
       ansible.builtin.debug:
        msg: Hi from play1 of task2
        
+- name: Play2  
+  hosts: prod  
+  tasks:
+    -name: This is play2
+     ansible.builtin.debug
+      msg: Hi from play2 od task1   
