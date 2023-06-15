@@ -12,5 +12,6 @@
         msg: The value of variable is {{ URL }}
       vars:
         URL: task.google.com
+      ansible.builtin.debug:
         msg: The value of car is {{ CARNAME }}
 
