@@ -4,3 +4,8 @@
     - name: This is my play1
       ansible.builtin.debug:
        msg: Hello from play1 of task1
+
+    - name: This is my play1 task2
+      ansible.builtin.debug:
+       msg: Hi from play1 of task2
+       
