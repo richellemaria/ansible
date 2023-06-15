@@ -13,5 +13,5 @@
   hosts: prod  
   tasks:
     -name: This is play2
-     ansible.builtin.debug
+     ansible.builtin.debug:
       msg: Hi from play2 od task1   
