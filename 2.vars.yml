@@ -1,9 +1,9 @@
-- name: Play1
+- name: Demo on variables
   hosts: all
-  vars-files:
-   - dev-vars.yml
   vars:
       URL: play.google.com
+  vars-files:
+   - dev-vars.yml
   tasks:
     - name: This is variable demo
       ansible.builtin.debug:
