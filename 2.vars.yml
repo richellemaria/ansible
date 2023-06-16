@@ -1,5 +1,7 @@
 - name: Play1
   hosts: all
+  vars-files:
+   - dev-vars.yml
   vars:
       URL: play.google.com
   tasks:
