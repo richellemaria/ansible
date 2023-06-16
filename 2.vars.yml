@@ -2,7 +2,7 @@
   hosts: all
   vars:
       URL: play.google.com
-  vars-files:
+  vars_files:
    - dev-vars.yml
   tasks:
     - name: This is variable demo
