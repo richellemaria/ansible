@@ -5,7 +5,7 @@
     - name: Run this task if it only centos
       ansible.builtin.debug:
        msg: I am centos Machine
-      when: ansible_distribution == "Centos"
+      when: ansible_distribution == "CentOS"
 
     - name: Run this task if it only debian
       ansible.builtin.debug:
