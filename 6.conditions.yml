@@ -19,7 +19,7 @@
         msg: I am learing ansible and only print if action is true 
       when: action
 
-   - name: Run only when bar is undefined
+    - name: Run only when bar is undefined
       ansible.builtin.debug:
         msg: BAR is not decalared 
       when: bar is undefined
