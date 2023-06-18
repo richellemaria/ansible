@@ -25,5 +25,5 @@
       
     - name: The prompt variable demo
       ansible.builtin.debug:
-       msg: The prompt variable is {{ URLName }}
+        msg: The prompt variable is {{ URLName }}
 
