@@ -5,7 +5,7 @@
       CARNAME: Ford
   vars_prompt:
    - name: URLName
-     prompt: enter the prompt variable {{ URLName }}
+     prompt: enter the prompt variable
   vars_files:
    - dev-vars.yml
   tasks:
