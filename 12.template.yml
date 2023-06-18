@@ -2,6 +2,6 @@
   hosts: all
   tasks:
     - name: demo passing value for cli
-      ansible.builtin.copy:
+      ansible.builtin.template:
        src: env.txt
        dest: /home/centos/env.txt
