@@ -1,5 +1,7 @@
 - name: Demo on condition
   hosts: all
+  vars:
+   action: false
   # gather_facts: false
   tasks: 
     - name: Run this task if it only centos
@@ -11,3 +13,8 @@
       ansible.builtin.debug:
        msg:  I am debian Machine
       when: ansible_distribution == "debian"
+    
+    - name: Run this action
+      ansible.builtin.debug:
+        msg: I am learing ansible and only print if action is true 
+      when: action
