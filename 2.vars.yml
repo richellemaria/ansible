@@ -2,6 +2,7 @@
   hosts: all
   vars:
       URL: play.google.com
+      CARNAME: Ford
   vars_files:
    - dev-vars.yml
   tasks:
