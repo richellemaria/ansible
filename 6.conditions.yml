@@ -1,7 +1,7 @@
 - name: Demo on condition
   hosts: all
   vars:
-   action: false
+   action: true
    bar: xyz
   # gather_facts: false
   tasks: 
