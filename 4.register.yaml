@@ -1,0 +1,10 @@
+- name: Shell Module with register
+  hosts: all
+  tasks:
+    - name: Demo on shell Module
+      ansible.builtin.shell: uptime
+      register: OUT
+
+    - name: Demo on printing register value
+      ansible.builtin.debug:
+       msg: "{{ OUT }}"
