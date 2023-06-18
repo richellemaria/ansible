@@ -1,0 +1,7 @@
+- name: Demo on using package
+  hosts: all
+  tasks:
+    - name: Demo on nginx
+      ansible.builtin.package:
+       name: nginx
+       state: present
