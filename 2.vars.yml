@@ -3,6 +3,9 @@
   vars:
       URL: play.google.com
       CARNAME: Ford
+  vars_prompt:
+   - name: URLName
+     prompt: enter the prompt variable {{ URLName }}
   vars_files:
    - dev-vars.yml
   tasks:
@@ -19,4 +22,8 @@
     - name: This is commandline variable demo
       ansible.builtin.debug:
         msg: The value of car is {{ CARNAME }}
+      
+    - name: The prompt variable demo
+      ansible.builtin.debug:
+       msg: The prompt variable is {{ URLName }}
 
