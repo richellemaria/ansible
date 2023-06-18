@@ -1,0 +1,7 @@
+- name: playbook to copy xyz file
+  hosts: all
+  tasks:
+    - name: copying the systemctl file
+      ansible.builtin.copy:
+       src: systemctl.txt
+       dest: /home/centos/systemctl.txt
