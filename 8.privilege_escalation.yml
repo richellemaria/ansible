@@ -1,0 +1,10 @@
+- name: Demonstarting privilge escalation
+  hosts: all
+  tasks:
+    - name: checking user id
+      ansible.builtin.shell: id
+      register: OUT
+
+    - name: Demo on printing register value
+      ansible.builtin.debug:
+       msg: "{{ OUT.stdout }}"
