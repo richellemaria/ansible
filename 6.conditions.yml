@@ -2,6 +2,7 @@
   hosts: all
   vars:
    action: false
+   bar: xyz
   # gather_facts: false
   tasks: 
     - name: Run this task if it only centos
@@ -21,5 +22,5 @@
 
     - name: Run only when bar is undefined
       ansible.builtin.debug:
-        msg: BAR is not decalared 
+        msg: BAR is not declared
       when: bar is undefined
