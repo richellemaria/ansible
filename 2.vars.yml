@@ -6,6 +6,7 @@
   vars_prompt:
    - name: URLName
      prompt: enter the prompt variable
+     private: no
   vars_files:
    - dev-vars.yml
   tasks:
