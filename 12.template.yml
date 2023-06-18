@@ -1,0 +1,7 @@
+- name: playbook to demo passing value for cli
+  hosts: all
+  tasks:
+    - name: demo passing value for cli
+      ansible.builtin.copy:
+       src: env.txt
+       dest: /home/centos/env.txt
