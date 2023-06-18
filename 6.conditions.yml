@@ -1,0 +1,13 @@
+- name: Demo on condition
+  hosts: all
+  # gather_facts: false
+  tasks: 
+    - name: Run this task if it only centos
+      ansible.builtin.debug:
+       msg: I am centos Machine
+      when: ansible_distribution == "centos"
+
+    - name: Run this task if it only debian
+      ansible.builtin.debug:
+       msg:  I am debian Machine
+      when: ansible_distribution == "debian"
