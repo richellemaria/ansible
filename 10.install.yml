@@ -1,5 +1,6 @@
 - name: Demo on using package
   hosts: all
+  become: yes
   tasks:
     - name: Demo on nginx
       ansible.builtin.package:
