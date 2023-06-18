@@ -8,3 +8,11 @@
     - name: Demo on printing register value
       ansible.builtin.debug:
        msg: "{{ OUT.stdout }}"
+
+    - name: Decalaring variable
+      set_fact:
+        STATUS: "{{ OUT.rc }}"
+
+    - name: uptime command exit commandline
+      ansible.builtin.debug:
+       msg: The exit code of uptime command is {{ STATUS }}
