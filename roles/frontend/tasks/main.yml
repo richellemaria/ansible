@@ -1,3 +1,10 @@
-- name: This is my frontend
-  ansible.builtin.debug:
-    msg: Hello from frontend of task1
+- name: Installing nginx
+  ansible.builtin.package:
+   name: nginx
+   state: present
+
+- name: starting nignix
+  ansible.builtin.systemd:
+   name: nginx
+   state: start
+   enabled: true
