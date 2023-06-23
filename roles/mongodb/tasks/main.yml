@@ -1,3 +1,4 @@
-- name: This is my mongodb
-  ansible.builtin.debug:
-    msg: Hello from mongodb of task1
+- name: configuring mongdb repo 
+  ansible.builtin.copy:
+   src: mongodb.repo
+   dest: /etc/yum.repos.d/mongodb.repo
