@@ -16,9 +16,9 @@
 
 - name: copy the frontend component which is downloaded on remote machine to niginx path
   ansible.builtin.copy:
-  src: /tmp/frontend-main/static
-  dest: /usr/share/nginx/html
-  remote_src: yes
+   src: /tmp/frontend-main/static
+   dest: /usr/share/nginx/html
+   remote_src: yes
 
 - name: starting nignix
   ansible.builtin.systemd:
