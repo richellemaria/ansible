@@ -11,13 +11,13 @@
 
 - name: clean up of old HTML content
   ansible.builtin.file:
-   path: /usr/share/nginx/html
+   path: /usr/share/nginx/html/
    state: absent
 
 - name: copy the frontend component which is downloaded on remote machine to niginx path
   ansible.builtin.copy:
-   src: /tmp/frontend-main/static
-   dest: /usr/share/nginx/html
+   src: /tmp/frontend-main/static/
+   dest: /usr/share/nginx/html/
    remote_src: yes
 
 - name: starting nignix
