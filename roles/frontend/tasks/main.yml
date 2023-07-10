@@ -3,11 +3,11 @@
    name: nginx
    state: present
 
-# - name: downloading and extracting the component
-#   ansible.builtin.unarchive:
-#    src: https://github.com/stans-robot-project/{{COMPONENT}}/archive/main.zip
-#    dest: /tmp
-#    remote_src: yes
+ - name: downloading and extracting the component
+   ansible.builtin.unarchive:
+    src: https://github.com/stans-robot-project/{{COMPONENT}}/archive/main.zip
+    dest: /tmp
+    remote_src: yes
 
 - name: clean up of old HTML content
   ansible.builtin.file:
