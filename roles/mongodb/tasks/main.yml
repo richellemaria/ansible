@@ -22,8 +22,8 @@
 
 - name: downloading and extracting frontend
   ansible.builtin.include_role:
-    name: common
-    task_from: download
+   name: common
+   task_from: download
 
 - name: injecting mongodb catalogue schema
   community.mongodb.mongodb_shell:
