@@ -5,8 +5,8 @@
 
 - name: downloading and extracting frontend
   ansible.builtin.include_role:
-    name: common
-    task_from: download
+   name: common
+   task_from: download
 
 - name: clean up of old HTML content
   ansible.builtin.file:
